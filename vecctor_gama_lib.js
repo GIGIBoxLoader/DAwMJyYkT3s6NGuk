@@ -291,8 +291,8 @@
 	
 	if Frame.Draggable == false then
 		button1settings.MouseButton1Down:Connect(function()
-			Frame.Draggable = true
-			button1settings.Text = "Draggable ON"
+				Frame.Visible = false
+				uimaker:Destroy()
 			
 		end)
 	elseif Frame.Draggable == true then
