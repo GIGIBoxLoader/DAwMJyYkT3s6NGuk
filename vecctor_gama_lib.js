@@ -1,4 +1,4 @@
-if game.PlaceId == "2788229376" then
+
 		local uimaker = Instance.new("ScreenGui")
 		local Frame = Instance.new("Frame")
 		local UICorner = Instance.new("UICorner")
@@ -312,6 +312,3 @@ if game.PlaceId == "2788229376" then
 
 		Aiming.ShowFOV = false
 	end)
-elseif game.PlaceId then
-	print("GameNotFound")
-end
