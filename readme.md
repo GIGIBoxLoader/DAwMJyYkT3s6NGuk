@@ -21,6 +21,8 @@ Right now we are going to tell you the very typical errors of the ARCU Console.
 |Error 19|The library was not found.|
 |Error 20|UNK library was unable to found.|
 |Error 21|Axnoil internal error.|
+|Error 30|Access not premitted|
+|Error **Connection Refused**|Firewall of uiOs or ARCU, you have permanently no access.|
 |Error 90|You are blacklisted.|
 
 # Commands.
