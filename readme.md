@@ -14,8 +14,8 @@ We understand that. We are currently working on the errors.
 Right now we are going to tell you the very typical errors of the ARCU Console.
 
 
-|**ERROR**|**ERROR DESCRIPTION**|
-|:----------|:----------|:--------------|
+|ERROR|ERROR DESCRIPTION|
+|:----------|:----------|
 |Error 17|Command was not found.|
 |Error 18|Script is glitched.|
 |Error 19|The library was not found.|
