@@ -111,7 +111,7 @@ AxRosApi.Visible = false
 local opc = true
 
 bind = "q"
-if opc == true then
+if opc == false then
 			command_logged.Text = "Servers are down or not avaliable."
 elseif opc == false then
 	command_logged.Text = "Welcome to AxRos ARCU Console "..plr.Name..". Use the command help to get INFO."
