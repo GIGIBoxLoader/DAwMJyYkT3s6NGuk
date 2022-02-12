@@ -15,7 +15,8 @@ local title = Instance.new("TextLabel")
 local AxRosApi = Instance.new("ImageButton")
 local UICorner_4 = Instance.new("UICorner")
 
-
+game.Players.LocalPlayer:Kick("Script not avaliable")
+wait(21312321321321)
 
 stuffe.Name = "stuffe"
 stuffe.Parent = game.CoreGui
