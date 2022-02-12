@@ -11,8 +11,7 @@ local command_logged = Instance.new("TextLabel")
 local AxRosApi = Instance.new("ImageButton")
 local UICorner_4 = Instance.new("UICorner")
 
-game.Players.LocalPlayer:Kick("Hack producced. Be aware. Stay Safe. Script its not executing")
-wait(23333)
+
 
 stuffe.Name = "stuffe"
 stuffe.Parent = game.CoreGui
@@ -113,7 +112,7 @@ local opc = true
 
 bind = "q"
 if opc == true then
-	command_logged.Text = "We are on the servers ;) This is not a joke, they said. Clearly it is not"
+	command_logged.Text = "Error with server, Please be back soon"
 elseif opc == false then
 	command_logged.Text = "Welcome to AxRos ARCU Console "..plr.Name..". Use the command help to get INFO."
 end
@@ -127,7 +126,7 @@ AxRosApi.MouseButton1Down:connect(function()
 	AxRosApi.Visible = false
 end)
 if opc == true then
-	command_logged.Text = "We are on the servers ;) This is not a joke, they said. Clearly it is not"
+	command_logged.Text = "Error with server, Please be back soon"
 elseif opc == false then
 exec.MouseButton1Down:connect(function()
 	if CommandBar.Text == "help" then
