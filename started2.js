@@ -16,8 +16,6 @@ local title = Instance.new("TextLabel")
 local AxRosApi = Instance.new("ImageButton")
 local UICorner_4 = Instance.new("UICorner")
 
-game.Players.LocalPlayer:Kick("service not avaliable")
-wait(98172398217329817382173827)
 
 stuffe.Name = "stuffe"
 stuffe.Parent = game.CoreGui
@@ -237,7 +235,7 @@ local mouse = plr:GetMouse()
 local userInout = game:GetService("UserInputService")
 
 AxRosApi.Visible = false
-local outspp = true
+local outspp = false
 bind = "q"
 if outspp == true then
 	command_logged.Text = "Error with the server (disabled or down)"
