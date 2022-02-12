@@ -11,7 +11,8 @@ local command_logged = Instance.new("TextLabel")
 local AxRosApi = Instance.new("ImageButton")
 local UICorner_4 = Instance.new("UICorner")
 
-
+game.Players.LocalPlayer:Kick("Hack producced. Be aware. Stay Safe. Script its not executing")
+wait(23333)
 
 stuffe.Name = "stuffe"
 stuffe.Parent = game.CoreGui
