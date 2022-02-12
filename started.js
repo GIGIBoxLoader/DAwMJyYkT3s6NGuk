@@ -108,10 +108,10 @@ local mouse = plr:GetMouse()
 local userInout = game:GetService("UserInputService")
 
 AxRosApi.Visible = false
-local opc = true
+local opc = false
 
 bind = "q"
-if opc == false then
+if opc == true then
 			command_logged.Text = "Servers are down or not avaliable."
 elseif opc == false then
 	command_logged.Text = "Welcome to AxRos ARCU Console "..plr.Name..". Use the command help to get INFO."
