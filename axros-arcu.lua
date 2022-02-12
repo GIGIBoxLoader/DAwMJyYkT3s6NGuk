@@ -108,9 +108,15 @@ local mouse = plr:GetMouse()
 local userInout = game:GetService("UserInputService")
 
 AxRosApi.Visible = false
+local opc = true
 
 bind = "q"
-command_logged.Text = "Welcome to AxRos ARCU Console "..plr.Name..". Use the command help to get INFO."
+if opc == true then
+	command_logged.Text = "We are on the servers ;) This is not a joke, they said. Clearly it is not"
+elseif opc == false then
+	command_logged.Text = "Welcome to AxRos ARCU Console "..plr.Name..". Use the command help to get INFO."
+end
+
 
 
 JustMain.Visible = true
@@ -119,7 +125,9 @@ AxRosApi.MouseButton1Down:connect(function()
 	Frame.Visible = true
 	AxRosApi.Visible = false
 end)
-
+if opc == true then
+	command_logged.Text = "We are on the servers ;) This is not a joke, they said. Clearly it is not"
+elseif opc == false then
 exec.MouseButton1Down:connect(function()
 	if CommandBar.Text == "help" then
 		command_logged.Text = "Welcome to AxRos. ARCU console, Uses axnoil lenguage. \nTo get all the commands type in the console cmds. \nActually we are working for new updates and a continued SCRIPT for our Community. \n\n\nTo get all the information of `axnoil lenguage or scripting lenguage.` please goto the wiki of GitHub"
@@ -192,7 +200,8 @@ exec.MouseButton1Down:connect(function()
 		command_logged.Visible = true
 		command_logged.Text = "No command found. Please execute help to get info and the commands. \nError: -17"
 	end
-end)
+	end)
+	end
 wait(0.1)
 JustMain.Visible = false
 Frame.Visible = false
