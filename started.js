@@ -189,7 +189,7 @@ exec.MouseButton1Down:connect(function()
 		command_logged.Text = "| Commands | \n\nCommands in the console \n\n\nC-sd: inspect the library files. Like `C-sd.main -show` \nnews: Last News \nlatestupdates: Show the new update info. \ngames -show: Show the supported games"
 		---------------------------------------------------
 	elseif CommandBar.Text == "latestupdates" then
-		command_logged.Text = "| Updates | \n\nLatest Updates Info \n\n\nBuild: 92 \nVersion: 1.1.3 \nName of version: Oreo"
+		command_logged.Text = "| Updates | \n\nLatest Updates Info \n\n\nBuild: 2.5 \nVersion: 1.1.3 \nName of version: Oreo"
 		---------------------------------------------------
 	elseif CommandBar.Text == "news" then
 		command_logged.Text = "| News | \n\nLatest News \n\n\nUpdated new UI! Using now uiOs Library. Working with new udaptes. Actually making more commands. New build. Check it out putting `latestupdates`"
