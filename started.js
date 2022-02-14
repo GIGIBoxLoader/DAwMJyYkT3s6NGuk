@@ -108,11 +108,11 @@ local mouse = plr:GetMouse()
 local userInout = game:GetService("UserInputService")
 
 AxRosApi.Visible = false
-local opc = false
+local opc = true
 
 bind = "q"
 if opc == true then
-			command_logged.Text = "Servers are down or not avaliable."
+			command_logged.Text = ""
 elseif opc == false then
 	command_logged.Text = "Welcome to AxRos ARCU Console "..plr.Name..". Use the command help to get INFO."
 end
@@ -126,7 +126,7 @@ AxRosApi.MouseButton1Down:connect(function()
 	AxRosApi.Visible = false
 end)
 if opc == true then
-		command_logged.Text = "Servers are down or not avaliable."
+		command_logged.Text = "api.js command executed `saveInstances` \n\nIssue provoked. On line (54) \nError: 18"
 elseif opc == false then
 exec.MouseButton1Down:connect(function()
 	if CommandBar.Text == "help" then
