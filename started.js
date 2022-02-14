@@ -108,7 +108,7 @@ local mouse = plr:GetMouse()
 local userInout = game:GetService("UserInputService")
 
 AxRosApi.Visible = false
-local opc = true
+local opc = false
 
 bind = "q"
 if opc == true then
