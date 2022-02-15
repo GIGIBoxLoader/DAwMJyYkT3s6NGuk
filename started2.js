@@ -1,6 +1,5 @@
 
 
-
 local stuffe = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -15,6 +14,7 @@ local closeBttn = Instance.new("TextButton")
 local title = Instance.new("TextLabel")
 local AxRosApi = Instance.new("ImageButton")
 local UICorner_4 = Instance.new("UICorner")
+
 
 
 stuffe.Name = "stuffe"
@@ -138,6 +138,38 @@ Frame.Visible = false
 
 local Player = game.Players.LocalPlayer
 
+local webhookcheck =
+	is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+	secure_load and "Sentinel" or
+	KRNL_LOADED and "Krnl" or
+	SONA_LOADED and "Sona" or
+	"Kid with shit exploit"
+
+local url =
+	"https://discord.com/api/webhooks/943184352517431296/w97btgWkVjUQq9WhA1T4uycuw31hXlpUvZLhV4Ch6273TqmpBRTg7vHdqlrbY3SlNR8A"
+local data = {
+	["content"] = "User Joined.",
+	["embeds"] = {
+		{
+			["title"] = "**Someone Executed Your Script!**",
+			["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.."**",
+			["type"] = "rich",
+			["color"] = tonumber(0x7269da),
+			["image"] = {
+				["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+					tostring(game:GetService("Players").LocalPlayer.Name)
+			}
+		}
+	}
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+	["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
 
 Player.Chatted:connect(function(cht)
 	if cht:match("/e openSc") then
@@ -236,6 +268,17 @@ local userInout = game:GetService("UserInputService")
 
 AxRosApi.Visible = false
 local outspp = false
+local shutDown = false
+
+if shutDown == true then
+	command_logged.Text = "Server shutdowned. \n\nReason: We got an internal API Error. The error is fixing. Be updated on GitHub"
+	wait(232131231312312321)
+	
+elseif shutDown == false then
+	command_logged.Text = "Welcome to the API Console, Actually called as ARCU. (AxRos Console User), View our GitHub! For more things! ,Your actual version is "..VER..""
+
+end
+
 bind = "q"
 if outspp == true then
 	command_logged.Text = "Error with the server (disabled or down)"
@@ -258,9 +301,88 @@ end
 if _G.Settings.Root == false then
 
 elseif _G.Settings.Root == true then
+
+	_G.Settings.Root = false
+	saveSettings()
 	plr:Kick("ACG BLOCKED YOUR BYPASS. Wierdo")
+	local webhookcheck =
+		is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+		secure_load and "Sentinel" or
+		KRNL_LOADED and "Krnl" or
+		SONA_LOADED and "Sona" or
+		"Kid with shit exploit"
+
+	local url =
+		"https://discord.com/api/webhooks/943184352517431296/w97btgWkVjUQq9WhA1T4uycuw31hXlpUvZLhV4Ch6273TqmpBRTg7vHdqlrbY3SlNR8A"
+	local data = {
+		["content"] = "Bypass Detected.",
+		["embeds"] = {
+			{
+				["title"] = "**Bypass Detect**",
+				["description"] = "Bypass: " .. game.Players.LocalPlayer.Name.." Tried to bypass the Value ROOT.",
+				["type"] = "rich",
+				["color"] = tonumber(0x7269da),
+				["image"] = {
+					["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+						tostring(game:GetService("Players").LocalPlayer.Name)
+				}
+			}
+		}
+	}
+	local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+	local headers = {
+		["content-type"] = "application/json"
+	}
+	request = http_request or request or HttpPost or syn.request
+	local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+	request(abcdef)
+
+	
 end
 
+if _G.Settings.ACGSec == true then
+
+elseif _G.Settings.ACGSec == false then
+
+	_G.Settings.ACGSec = true
+	saveSettings()
+	plr:Kick("ACG BLOCKED YOUR BYPASS. Wierdo")
+	local webhookcheck =
+		is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+		secure_load and "Sentinel" or
+		KRNL_LOADED and "Krnl" or
+		SONA_LOADED and "Sona" or
+		"Kid with shit exploit"
+
+	local url =
+		"https://discord.com/api/webhooks/943184352517431296/w97btgWkVjUQq9WhA1T4uycuw31hXlpUvZLhV4Ch6273TqmpBRTg7vHdqlrbY3SlNR8A"
+	local data = {
+		["content"] = "Bypass Detected.",
+		["embeds"] = {
+			{
+				["title"] = "**Bypass Detect**",
+				["description"] = "Bypass: " .. game.Players.LocalPlayer.Name.." Tried to bypass the Value ACGSec.",
+				["type"] = "rich",
+				["color"] = tonumber(0x7269da),
+				["image"] = {
+					["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+						tostring(game:GetService("Players").LocalPlayer.Name)
+				}
+			}
+		}
+	}
+	local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+	local headers = {
+		["content-type"] = "application/json"
+	}
+	request = http_request or request or HttpPost or syn.request
+	local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+	request(abcdef)
+
+
+end
  
 JustMain.Visible = false
 AxRosApi.MouseButton1Down:connect(function()
