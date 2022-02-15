@@ -108,7 +108,7 @@ local mouse = plr:GetMouse()
 local userInout = game:GetService("UserInputService")
 
 AxRosApi.Visible = false
-local opc = false
+local opc = true
 
 bind = "q"
 if opc == true then
@@ -126,7 +126,7 @@ AxRosApi.MouseButton1Down:connect(function()
 	AxRosApi.Visible = false
 end)
 if opc == true then
-		command_logged.Text = "api.js command executed `saveInstances` \n\nIssue provoked. On line (54) \nError: 18"
+		command_logged.Text = "ACG-Line Error. \n\nIssue provoked. \n\n tableIndex.mod: line 15, ClientID.then=BanScreen, whatClientId.Provokes.Issue.WithError"
 elseif opc == false then
 exec.MouseButton1Down:connect(function()
 	if CommandBar.Text == "help" then
