@@ -71,6 +71,7 @@ if update == true then
 	notify.BackgroundTransparency = 0.5
 	wait(20)
 	notify:Destroy()
+	wait(9283123)
 elseif update == false then
 	print(ver)
 	notify.Visible = false
