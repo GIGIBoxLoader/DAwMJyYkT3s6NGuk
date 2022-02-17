@@ -62,7 +62,7 @@ desc.TextYAlignment = Enum.TextYAlignment.Top
 
 local ver = "1.1.3 - 3"
 local nextVer = "1.1.3 - 4"
-local update = false
+local update = true
 
 if update == true then
 	notify.Visible = true
