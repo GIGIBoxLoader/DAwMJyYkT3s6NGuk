@@ -69,15 +69,16 @@ if update == true then
 	title.Text = "New update avaliable"..ver..""
 	desc.Text = "Please close your roblox client to get this update. "..nextVer.." To get this version is needed to close or rejoin."
 	notify.BackgroundTransparency = 0.5
-	wait(20)
+	wait(40)
 	notify:Destroy()
-	wait(9283123)
+	wait(900)
 elseif update == false then
 	print(ver)
 	notify.Visible = false
 end
 
+closeBttn.Visible = false
+
 closeBttn.MouseButton1Down:Connect(function()
-	notify.Visible = false
 	print(ver)
 end)
