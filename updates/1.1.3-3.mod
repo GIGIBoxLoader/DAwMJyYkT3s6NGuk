@@ -63,21 +63,23 @@ desc.TextYAlignment = Enum.TextYAlignment.Top
 local ver = "1.1.3 - 3"
 local nextVer = "1.1.3 - 4"
 local update = true
+closeBttn.Visible = false
 
 if update == true then
 	notify.Visible = true
 	title.Text = "New update avaliable"..ver..""
 	desc.Text = "Please close your roblox client to get this update. "..nextVer.." To get this version is needed to close or rejoin."
 	notify.BackgroundTransparency = 0.5
-	wait(40)
+	wait(100000)
 	notify:Destroy()
 	wait(900)
+	error("SCRIPT CLOSED or NOT AVALIABLE")
 elseif update == false then
 	print(ver)
 	notify.Visible = false
 end
 
-closeBttn.Visible = false
+
 
 closeBttn.MouseButton1Down:Connect(function()
 	print(ver)
