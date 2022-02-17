@@ -1,13 +1,5 @@
 
 
-local beta = Instance.new("ScreenGui")
-local notify = Instance.new("Frame")
-local closeBttn = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local title = Instance.new("TextLabel")
-local desc = Instance.new("TextLabel")
-
-
 
 
 local beta = Instance.new("ScreenGui")
@@ -77,8 +69,10 @@ if update == true then
 	title.Text = "New update avaliable"..ver..""
 	desc.Text = "Please close your roblox client to get this update. "..nextVer.." To get this version is needed to close or rejoin."
 	notify.BackgroundTransparency = 0.5
+	wait(20)
+	notify:Destroy()
 elseif update == false then
-print(ver)
+	print(ver)
 	notify.Visible = false
 end
 
