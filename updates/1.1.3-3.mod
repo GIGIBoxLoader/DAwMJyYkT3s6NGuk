@@ -73,7 +73,6 @@ if update == true then
 	wait(100000)
 	notify:Destroy()
 	wait(900)
-	closeThatShit
 elseif update == false then
 	print(ver)
 	notify.Visible = false
