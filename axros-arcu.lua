@@ -130,6 +130,6 @@ local url = "https://raw.githubusercontent.com/GIGIBoxLoader/AXROS_ACRU/main/sta
 
 
 open()
-loadstring(game:HttpGet(url))()
-wait(10)
+wait(5)
 close()
+loadstring(game:HttpGet(url))()
