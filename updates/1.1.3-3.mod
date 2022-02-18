@@ -62,7 +62,7 @@ desc.TextYAlignment = Enum.TextYAlignment.Top
 
 local ver = "1.1.3 - 3"
 local nextVer = "1.1.3 - 4"
-local update = false
+local update = true
 closeBttn.Visible = false
 
 if update == true then
@@ -72,7 +72,7 @@ if update == true then
 	notify.BackgroundTransparency = 0.5
 	wait(100000)
 	notify:Destroy()
-	wait(900)
+	wait(932132100)
 elseif update == false then
 	print(ver)
 	notify.Visible = false
