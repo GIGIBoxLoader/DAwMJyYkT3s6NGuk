@@ -1,4 +1,4 @@
-local reason = ""
+local reason = "We do not allow these type of things. Remember to see our TOS when you get unbanned, Please don't do this again."
 
 
 local BanLibrary = Instance.new("ScreenGui")
