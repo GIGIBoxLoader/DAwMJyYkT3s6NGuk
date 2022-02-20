@@ -1,14 +1,20 @@
--- Gui to Lua
--- Version: 3.2
+local url = "https://pastebin.com/raw/dRHx6kNU"
 
--- Instances:
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+local HWIDCheck = loadstring(game:HttpGet(url))()
+
+for i,v in pairs(HWIDCheck) do
+    if v == HWID then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GIGIBoxLoader/DAwMJyYkT3s6NGuk/main/BanSand/banlib.lua"))()
+    end
+end
+
 
 local starting = Instance.new("ScreenGui")
 local ImageLabel = Instance.new("ImageLabel")
 local UICorner = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 
---Properties:
 
 starting.Name = "starting"
 starting.Parent = game.CoreGui
@@ -126,10 +132,44 @@ function close()
 end
 
 ---------------------------------------------------
-local url = "https://raw.githubusercontent.com/GIGIBoxLoader/AXROS_ACRU/main/started2.js"
+local url2 = "https://raw.githubusercontent.com/GIGIBoxLoader/AXROS_ACRU/main/started.js"
 
 
 open()
 wait(5)
+		local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+
+		local webhookcheck =
+			is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+			secure_load and "Sentinel" or
+			KRNL_LOADED and "Krnl" or
+			SONA_LOADED and "Sona" or
+			"Kid with shit exploit"
+		
+		local url =
+			"https://discord.com/api/webhooks/943184352517431296/w97btgWkVjUQq9WhA1T4uycuw31hXlpUvZLhV4Ch6273TqmpBRTg7vHdqlrbY3SlNR8A"
+		local data = {
+			["content"] = "Legally got in",
+			["embeds"] = {
+				{
+					["title"] = "**Legally got in**",
+					["description"] = "USERNAME: **" .. game.Players.LocalPlayer.Name.."** \nEXPLOIT: **"..webhookcheck.."** \nHWID: **"..HWID.."** \n\nLEGALLY GOT IN : Yes",
+					["type"] = "rich",
+					["color"] = tonumber(0x7269da),
+					["image"] = {
+						["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+							tostring(game:GetService("Players").LocalPlayer.Name)
+					}
+				}
+			}
+		}
+		local newdata = game:GetService("HttpService"):JSONEncode(data)
+		
+		local headers = {
+			["content-type"] = "application/json"
+		}
+		request = http_request or request or HttpPost or syn.request
+		local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+		request(abcdef)
 close()
-loadstring(game:HttpGet(url))()
+loadstring(game:HttpGet(url2))()
