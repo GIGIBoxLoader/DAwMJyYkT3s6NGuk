@@ -723,4 +723,4 @@ Frame.Visible = false
 wait(1)
 AxRosApi.Visible = true
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GIGIBoxLoader/AXROS_ACRU/main/updates/updateChecker.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GIGIBoxLoader/DAwMJyYkT3s6NGuk/main/updates/updateChecker.lua"))()
