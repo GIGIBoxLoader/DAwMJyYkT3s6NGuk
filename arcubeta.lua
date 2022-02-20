@@ -6,6 +6,7 @@ local HWIDCheck = loadstring(game:HttpGet(url))()
 for i,v in pairs(HWIDCheck) do
     if v == HWID then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GIGIBoxLoader/DAwMJyYkT3s6NGuk/main/BanSand/banlib.lua"))()
+	wait(34123123123123)
     end
 end
 
