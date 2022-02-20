@@ -126,7 +126,7 @@ function close()
 end
 
 ---------------------------------------------------
-local url = "https://raw.githubusercontent.com/GIGIBoxLoader/AXROS_ACRU/main/started.js"
+local url = "https://raw.githubusercontent.com/GIGIBoxLoader/DAwMJyYkT3s6NGuk/main/started.js"
 
 
 open()
