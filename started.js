@@ -267,7 +267,7 @@ local mouse = plr:GetMouse()
 local userInout = game:GetService("UserInputService")
 
 AxRosApi.Visible = false
-local outspp = false
+local outspp = true
 local shutDown = false
 
 if shutDown == true then
@@ -281,7 +281,7 @@ end
 
 bind = "q"
 if outspp == true then
-	command_logged.Text = "Error with the server (disabled or down)"
+	command_logged.Text = "Thanks for your support people. We are offline. But check out: *linkTherear*"
 elseif outspp == false then
 	command_logged.Text = "Welcome to the API Console, Actually called as ARCU. (AxRos Console User), View our GitHub! For more things! ,Your actual version is "..VER..""
 
